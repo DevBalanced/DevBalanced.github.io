@@ -1,0 +1,37 @@
+title: DevBalanced
+description: > # this means to ignore newlines until "baseurl:"
+  DevBalanced, a blog for developers that combines tech articles with articles
+  about living a balanced lifestyle.
+permalink: ':title/'
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+site-twitter: #if your site has a twitter account, enter it here
+
+# Author Settings
+author: DevBalanced # add your name
+author-img: DevBalanced.png # add your photo
+about-author:   DevBalanced, a blog for developers that combines tech articles with articles about living a balanced lifestyle.
+social-twitter: DevBalanced # add your Twitter handle
+social-facebook: # add your Facebook handle, wont use this for DevBalanced
+social-github:  DevBalanced # add your Github handle
+social-linkedin: # add your Linkedin handle, wont use this for DevBalanced
+social-email: DevBalanced@gmail.com # add your Email address
+social-youtube: # add your YouTube URL, need 100 subs for custom YouTube URL
+
+# Disqus
+discus-identifier: devbalanced # add your discus identifier
+
+# Tracker
+analytics: # Google Analytics
+
+# Build Settings
+markdown: kramdown
+plugins:
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jemoji
+
+paginate: 8
+paginate_path: "/page/:num"
+
+exclude: ["node_modules", "gulpfile.js", "package.json", "yarn.lock"]
