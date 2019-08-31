@@ -2,8 +2,8 @@
 layout: post
 title: "Welcome to DevBalanced!"
 date: 2019-08-30
-description: You'll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. # Add post description (optional)
-img:  welcome-to-devbalanced.jpg # Add image post (optional)
+description: Welcome to DevBalanced! # Add post description (optional)
+img:  welcome-to-devbalanced/welcome-to-devbalanced.jpg # Add image post (optional)
 ---
 If you're reading this post, welcome to the DevBalanced blog! This blogs main purpose is a place for written articles that correspond one-to-one with videos posted on the DevBalanced YouTube channel, however other posts may find their way onto this blog in time.
 
