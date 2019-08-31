@@ -33,7 +33,7 @@ access to information.*"
 
 Computer science is an extremely far-ranging field which overlaps with almost every other scientific discipline, this is because of how ubiquitous computers have become, there is no scientific field which does not benefit from the information processing power that modern computers provide. Below I have drawn a diagram (incomplete mind) that show some of the different areas of study that exist within computer science.
 
-![Sub-fields diagram](/assets/img/cs-fundamentals/introduction-to-computer-science/sub-fields.gif)
+![Sub-fields diagram](assets/img/cs-fundamentals/introduction-to-computer-science/sub-fields.gif)
 
 # What does a computer scientist do?
 
@@ -72,7 +72,7 @@ The every day person considers a computer to be a laptop or desktop PC. But a co
 
 To keep this as simple as possible for the purpose of this introductory article we will consider the stored program computer as depicted in the diagram below:
 
-![Stored program computer diagram](/assets/img/cs-fundamentals/introduction-to-computer-science/storedprogramcomputer.gif)
+![Stored program computer diagram](assets/img/cs-fundamentals/introduction-to-computer-science/storedprogramcomputer.gif)
 
 - CPU - Central processing unit, this is the part of the computer which carries out instructions.
 - Memory - This part of the computer holds the instructions, and the data on which the instructions will operate.
@@ -88,7 +88,7 @@ When a program is written in a programming language, the code is known as source
 
 The key idea to understand about computer programs and programming languages is that a computer only understands one language - binary. Binary representation is at the very heart of how modern computers work. For now understand that any computer program that is written in any programming language, i.e it is source code, must go through a process to be converted into binary. This process is called compilation, and the binary equivalent of source code is known as machine code.
 
-![Compilation](/assets/img/cs-fundamentals/introduction-to-computer-science/compilation.gif)
+![Compilation](assets/img/cs-fundamentals/introduction-to-computer-science/compilation.gif)
 
 In the next part of the CS Fundamentals series we will cover the topic of binary representation.
 
