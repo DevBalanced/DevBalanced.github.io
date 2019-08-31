@@ -28,7 +28,7 @@ Each topic will have multiple videos and each video should have a corresponding 
 
 As for the author, my name is Max Sargent. I am a recent graduate from the University of Portsmouth in the UK. I start my graduate job in about a months time. For me this blog and channel will provide a way for me to sharpen up my skills prior to starting full time work as well as providing a platform to continue more "academic" style work, which I have not been able to do since finishing university.
 
-If you want to learn a bit for about me, check out my [CV][cv-link].
+If you want to learn a bit more about me, check out my [CV][cv-link].
 
 Thanks for checking out the blog,
 
