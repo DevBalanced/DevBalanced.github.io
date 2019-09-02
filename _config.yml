@@ -22,7 +22,7 @@ social-youtube: # add your YouTube URL, need 100 subs for custom YouTube URL
 discus-identifier: devbalanced # add your discus identifier
 
 # Tracker
-analytics: # Google Analytics
+analytics: UA-114351851-2 # Google Analytics
 
 # Build Settings
 markdown: kramdown
