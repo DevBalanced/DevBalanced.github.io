@@ -90,6 +90,27 @@ The key idea to understand about computer programs and programming languages is 
 
 ![Compilation](/assets/img/cs-fundamentals/introduction-to-computer-science/compilation.jpg)
 
+# Conclusion
+
+To sum up what we have covered in this post we will answer the questions we asked at the start:
+
+**What is computer science?**
+
+Computer science is the study of information processing, not just the study of computers. It is a wide and varied field which overlaps many other scientific disciplines.
+
+**What does a computer scientist do?**
+
+A computer scientist solves problems, most computer scientists do this by writing computer programs.
+
+**What is a computer?**
+
+Computers are information processing machines, and they are ubiquitous - not just your laptop or desktop PC! Modern computers are stored program computers.
+
+**What is a computer program?**
+
+A computer program is a set of instructions for a computer to execute, it is written in a programming language (source code) and then compiled into binary (machine code).
+
+
 In the next part of the CS Fundamentals series we will cover the topic of binary representation.
 
 Thanks for checking out the blog,
