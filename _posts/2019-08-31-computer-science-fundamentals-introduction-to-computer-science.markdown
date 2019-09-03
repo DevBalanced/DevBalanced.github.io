@@ -7,7 +7,7 @@ img: cs-fundamentals/introduction-to-computer-science/postimage.jpg # Add image 
 ---
 Hi!
 
-This post is the first in a series entitled - CS Fundamentals. This series will touch on some key topics that are fundamental to building a understanding of computer science, and hopefully in a way which is easy to understand for someone who is completely new to the topic.
+This post is the first in a series entitled *CS Fundamentals*. This series will touch on some key topics that are fundamental to building a understanding of computer science, and hopefully in a way which is easy to understand for someone who is completely new to the topic.
 
 Todays post is an introduction into the discipline itself and will aim to answer these questions:
 
@@ -111,7 +111,7 @@ Computers are information processing machines, and they are ubiquitous - not jus
 A computer program is a set of instructions for a computer to execute, it is written in a programming language (source code) and then compiled into binary (machine code).
 
 
-In the next part of the CS Fundamentals series we will cover the topic of binary representation.
+In the next part of the CS Fundamentals series we will cover the topic of the binary number system.
 
 Thanks for checking out the blog,
 
