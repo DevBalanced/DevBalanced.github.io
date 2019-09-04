@@ -11,14 +11,14 @@ This post is the first in a series entitled *CS Fundamentals*. This series will 
 
 Todays post is an introduction into the discipline itself and will aim to answer these questions:
 
-- What is computer science?
-- What does a computer scientist do?
-- What is a computer?
-- What is a computer program?
+- [What is computer science?](#what_is_cs)
+- [What does a computer scientist do?](#what_does_cs)
+- [What is a computer?](#what_is_computer)
+- [What is a computer program?](#what_is_program)
 
 After answering these questions hopefully someone who has no idea about the subject might have a vague idea of what it is and why it is so fascinating.
 
-# What is computer science?
+# What is computer science? <a name="what_is_cs"></a>
 
 The definition of computer science from google search is:
 
@@ -35,7 +35,7 @@ Computer science is an extremely far-ranging field which overlaps with almost ev
 
 ![Sub-fields diagram](/assets/img/cs-fundamentals/introduction-to-computer-science/sub-fields.jpg)
 
-# What does a computer scientist do?
+# What does a computer scientist do? <a name="what_does_cs"></a>
 
 Following on from our definition of computer science, we now must define a computer scientist. Obviously a computer scientist is someone who studies computer science! However to answer this question I find that looking at vocations of computer scientists helps paints a better picture of what they do. By understanding what jobs computer scientists work, and also analyzing the typical traits that make for good workers within these jobs, we can understand what a computer scientist does on a day to day basis.
 
@@ -64,7 +64,7 @@ In short, a computer scientist is someone who has studied computer science, and 
 
 Computer scientists typically work on the theoretical side of the field, as opposed to computer engineers who work on the hardware. However the fields of course overlap.
 
-# What is a computer?
+# What is a computer? <a name="what_is_computer"></a>
 
 So now we have an understanding of computer science and what it really is, as well as what makes a (good) computer scientist. What about computers themselves? If we said earlier that computer science doesn't require computers, then what is a computer? 
 
@@ -80,7 +80,7 @@ To keep this as simple as possible for the purpose of this introductory article 
 The computer is essentially a machine which carries out a set of instructions on a given piece of data. The addresses arrow signifies the CPU requesting either the next instruction, or a piece of data. Every instruction or piece of data has an address within memory. This corresponds nicely with our idea of a computer as an information processing machine. 
 
 
-# What is a computer program?
+# What is a computer program? <a name="what_is_program"></a>
 
 We now know a computer is a machine which operates on data, by following a set of instructions. A computer program is the name we give to the set of instructions the computer is following. When a computer is following a set of instructions we say that the computer is executing the program. Computer programs are written by computer programmers, which is often a vocation where computer scientists work. However computers do not understand human language, human language is ambiguous by nature with many complexities and nuances. Computer programs are written in special languages called programming languages. These languages are extremely varied and the differences between them is an article in of itself.
 
