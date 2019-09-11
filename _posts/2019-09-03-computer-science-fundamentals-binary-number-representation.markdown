@@ -6,28 +6,29 @@ description: Basics of binary number representation. # Add post description (opt
 img: cs-fundamentals/binary/postimage.jpg # Add image post (optional)
 ---
 
+Hi!
+
+This post is the second in the CS Fundamentals series, todays topic is a concept which forms the basis for all modern computer systems. The binary number system! Hopefully this post will give someone with little understanding of the topic a better idea of why it is so important.
+
+---
+
 # Contents
-1. [Introduction](#introduction)
-2. [What is binary?](#what_is_binary)
+1. [What is binary?](#what_is_binary)
 	1. [Encoding](#encoding)
 	2. [Binary units](#binary_units)
-3. [How binary works](#how_binary_works)
+2. [How binary works](#how_binary_works)
 	1. [Base-2 and base-10](#base-2_base-10)
 	2. [Place values](#place_values)
 	3. [Comparison](#comparison)
 	4. [Why do we use binary?](#why_binary)
-4. [Converting denary to binary](#conversion)
+3. [Converting denary to binary](#conversion)
 	1. [Divide by 2 method](#div_2)
 	2. [Largest place value method](#largest_place)
-5. [Conclusion](#conclusion)
+4. [Conclusion](#conclusion)
 	1. [This post](#this_post)
 	2. [Next post](#next_post)
 
-# Introduction <a name="introduction"></a>
-
-Hi!
-
-This post is the second in the CS Fundamentals series, todays topic is a concept which forms the basis for all modern computer systems. The binary number system! Hopefully this post will give someone with little understanding of the topic a better idea of why it is so important.
+---
 
 # What is binary? <a name="what_is_binary"></a>
 
@@ -64,6 +65,8 @@ Often when talking about bits it is easier to group them together into *bytes*. 
 
 ![Bytes diagram](/assets/img/cs-fundamentals/binary/bytes.jpg){: .center-image}
 
+---
+
 # How binary works <a name="how_binary_works"></a>
 
 ## Base-2 and base-10 <a name="base-2_base-10"></a>
@@ -94,6 +97,8 @@ The reason that binary is used in computers is its simplicity, as each digit in 
 
 As you can see even if the signal is distorted, it is still possible to read the signal and retrieve the information. If this signal had several different discrete levels then the chance of the distortion affecting the signal is greater.
 
+---
+
 # Converting denary to binary <a name="conversion"></a>
 
 ## Divide by 2 method <a name="div_2"></a>
@@ -110,6 +115,8 @@ We see now what is happening with this method - first the largest possible place
 ![Conversion diagram](/assets/img/cs-fundamentals/binary/conversion.jpg)
 
 Another thing you might have noticed is that for binary numbers, if they are odd the last place value will always be 1 and even numbers the last place will always be 0. This is clearly because the place value is 1!
+
+---
 
 # Conclusion <a name="conclusion"></a>
 

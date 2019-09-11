@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<!-- saved from url=(0068)http://127.0.0.1:4000/computer-science-fundamentals-boolean-algebra/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<title>CS Fundamentals III: Boolean Algebra &amp; Logic Gates - DevBalanced</title>
+
+  <!-- Edit site and author settings in `_config.yml` to make the social details your own -->
+
+    <meta content="DevBalanced" property="og:site_name">
+  
+    <meta content="CS Fundamentals III: Boolean Algebra &amp; Logic Gates" property="og:title">
+  
+  
+    <meta content="article" property="og:type">
+  
+  
+    <meta content="Basics of boolean algebra and logic gates." property="og:description">
+  
+  
+    <meta content="http://localhost:4000/computer-science-fundamentals-boolean-algebra/" property="og:url">
+  
+  
+    <meta content="2019-09-04T00:00:00+01:00" property="article:published_time">
+    <meta content="http://localhost:4000/about/" property="article:author">
+  
+  
+    <meta content="http://localhost:4000/assets/img/cs-fundamentals/boolean-algebra-and-logic-gates/postimage.jpg" property="og:image">
+  
+  
+    
+  
+  
+    
+  
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@">
+    <meta name="twitter:creator" content="@DevBalanced">
+  
+    <meta name="twitter:title" content="CS Fundamentals III: Boolean Algebra &amp; Logic Gates">
+  
+  
+    <meta name="twitter:url" content="http://localhost:4000/computer-science-fundamentals-boolean-algebra/">
+  
+  
+    <meta name="twitter:description" content="Basics of boolean algebra and logic gates.">
+  
+  
+    <meta name="twitter:image:src" content="http://localhost:4000/assets/img/cs-fundamentals/boolean-algebra-and-logic-gates/postimage.jpg">
+  
+
+	<meta name="description" content="Basics of boolean algebra and logic gates.">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta property="og:image" content="">
+	<link rel="shortcut icon" href="http://127.0.0.1:4000/assets/img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="http://127.0.0.1:4000/assets/img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="http://127.0.0.1:4000/assets/img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="http://127.0.0.1:4000/assets/img/favicon/apple-touch-icon-144x144.png">
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#263959">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#263959">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#263959">
+	<!-- Google Fonts -->
+	<link href="./CS Fundamentals III_ Boolean Algebra &amp; Logic Gates - DevBalanced_files/css" rel="stylesheet">
+	<link href="./CS Fundamentals III_ Boolean Algebra &amp; Logic Gates - DevBalanced_files/css(1)" rel="stylesheet">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="./CS Fundamentals III_ Boolean Algebra &amp; Logic Gates - DevBalanced_files/font-awesome.min.css">
+	<!-- Styles -->
+	<link rel="stylesheet" href="./CS Fundamentals III_ Boolean Algebra &amp; Logic Gates - DevBalanced_files/main.css">
+<script async="" src="./CS Fundamentals III_ Boolean Algebra &amp; Logic Gates - DevBalanced_files/analytics.js.download"></script><script src="./CS Fundamentals III_ Boolean Algebra &amp; Logic Gates - DevBalanced_files/embed.js.download" data-timestamp="1568137315244"></script><link rel="prefetch" as="style" href="https://c.disquscdn.com/next/embed/styles/lounge.e1ba106031160b53ce0a17747e335a19.css"><link rel="prefetch" as="script" href="https://c.disquscdn.com/next/embed/common.bundle.0f667ce3f3c4c23c241397158b549cbc.js"><link rel="prefetch" as="script" href="https://c.disquscdn.com/next/embed/lounge.bundle.c6b1b0ee03c25d60093615e6a5b24485.js"><link rel="prefetch" as="script" href="https://disqus.com/next/config.js"><script src="./CS Fundamentals III_ Boolean Algebra &amp; Logic Gates - DevBalanced_files/alfie.f51946af45e0b561c60f768335c9eb79.js.download" async="" charset="UTF-8"></script></head>
+
+<body>
+
+  <div class="wrapper">
+    <aside class="sidebar">
+  <header>
+    <div class="about">
+      <div class="cover-author-image">
+        <a href="http://127.0.0.1:4000/"><img src="./CS Fundamentals III_ Boolean Algebra &amp; Logic Gates - DevBalanced_files/DevBalanced.png" alt="DevBalanced"></a>
+      </div>
+      <div class="author-name">DevBalanced</div>
+      <p>DevBalanced, a blog for developers that combines tech articles with articles about living a balanced lifestyle.</p>
+    </div>
+  </header> <!-- End Header -->
+  <footer>
+    <section class="contact">
+      <h3 class="contact-title">Contact me</h3>
+      <ul>
+        
+          <li><a href="https://twitter.com/DevBalanced" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+        
+<!--         
+          <li><a href="https://facebook.com/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+         -->
+        
+          <li class="github"><a href="http://github.com/DevBalanced" target="_blank"><i class="fa fa-github"></i></a></li>
+        
+        
+          <li class="youtube"><a href="http://youtube.com/" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+        
+<!--         
+          <li class="linkedin"><a href="https://in.linkedin.com/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+         -->
+        
+          <li class="email"><a href="mailto:DevBalanced@gmail.com"><i class="fa fa-envelope-o"></i></a></li>
+        
+      </ul>
+    </section> <!-- End Section Contact -->
+    <div class="copyright">
+      <p>2019 © DevBalanced</p>
+    </div>
+  </footer> <!-- End Footer -->
+</aside> <!-- End Sidebar -->
+<div class="content-box clearfix">
+  <article class="article-page">
+  <div class="page-content">
+    
+    <div class="page-cover-image">
+      <figure>
+        <img class="page-image" src="./CS Fundamentals III_ Boolean Algebra &amp; Logic Gates - DevBalanced_files/postimage.jpg" alt="CS Fundamentals III: Boolean Algebra &amp; Logic Gates">
+        
+      </figure>
+    </div> <!-- End Page Cover Image -->
+    
+    <div class="wrap-content">
+      <header class="header-page">
+        <h1 class="page-title">CS Fundamentals III: Boolean Algebra &amp; Logic Gates</h1>
+        <div class="page-date"><span>2019, Sep 04&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+      </header>
+      <p>Hi!</p>
+
+<p>This post is the third in the CS Fundamentals series, todays topic is another idea critical to the inner workings of all modern computer systems - <em>Boolean algebra</em>. Boolean algebra is similar to the algebra we all learned in maths at school, but the variables (X,Y,Z etc) can only take two values - true or false. In the “regular” algebra that we learned at school these variables could take the value of any number.</p>
+
+<hr>
+
+<h1 id="contents">Contents</h1>
+<ol>
+  <li><a href="http://127.0.0.1:4000/computer-science-fundamentals-boolean-algebra/#what_is_boolean_algebra">What is boolean algebra?</a></li>
+  <li><a href="http://127.0.0.1:4000/computer-science-fundamentals-boolean-algebra/#what_is_logic_gate">What is a logic gate?</a></li>
+  <li><a href="http://127.0.0.1:4000/computer-science-fundamentals-boolean-algebra/#boolean_operators_and_gates">Boolean operators &amp; equivalent logic gates</a>
+    <ol>
+      <li><a href="http://127.0.0.1:4000/computer-science-fundamentals-boolean-algebra/#basic">Basic operators</a>
+        <ol>
+          <li><a href="http://127.0.0.1:4000/computer-science-fundamentals-boolean-algebra/#and">AND</a></li>
+          <li><a href="http://127.0.0.1:4000/computer-science-fundamentals-boolean-algebra/#or">OR</a></li>
+          <li><a href="http://127.0.0.1:4000/computer-science-fundamentals-boolean-algebra/#not">NOT</a></li>
+        </ol>
+      </li>
+      <li><a href="http://127.0.0.1:4000/computer-science-fundamentals-boolean-algebra/#combined">Combined operators</a>
+        <ol>
+          <li><a href="http://127.0.0.1:4000/computer-science-fundamentals-boolean-algebra/#xor">XOR</a></li>
+          <li><a href="http://127.0.0.1:4000/computer-science-fundamentals-boolean-algebra/#nand">NAND</a></li>
+          <li><a href="http://127.0.0.1:4000/computer-science-fundamentals-boolean-algebra/#nor">NOR</a></li>
+        </ol>
+      </li>
+      <li><a href="http://127.0.0.1:4000/computer-science-fundamentals-boolean-algebra/#cheatsheet">Cheat-sheet</a></li>
+      <li><a href="http://127.0.0.1:4000/computer-science-fundamentals-boolean-algebra/#simple-example">Simple example</a></li>
+    </ol>
+  </li>
+  <li><a href="http://127.0.0.1:4000/computer-science-fundamentals-boolean-algebra/#laws">Boolean algebra laws</a>
+    <ol>
+      <li><a href="http://127.0.0.1:4000/computer-science-fundamentals-boolean-algebra/#commutativity">Commutativity</a></li>
+      <li><a href="http://127.0.0.1:4000/computer-science-fundamentals-boolean-algebra/#identity">Identity</a></li>
+      <li><a href="http://127.0.0.1:4000/computer-science-fundamentals-boolean-algebra/#complement">Complement</a></li>
+      <li><a href="http://127.0.0.1:4000/computer-science-fundamentals-boolean-algebra/#idempotent">Idempotent</a></li>
+      <li><a href="http://127.0.0.1:4000/computer-science-fundamentals-boolean-algebra/#double_negation">Double negation</a></li>
+      <li><a href="http://127.0.0.1:4000/computer-science-fundamentals-boolean-algebra/#associativity">Associativity</a></li>
+      <li><a href="http://127.0.0.1:4000/computer-science-fundamentals-boolean-algebra/#distributivity">Distributivity</a></li>
+      <li><a href="http://127.0.0.1:4000/computer-science-fundamentals-boolean-algebra/#de_morgans">de Morgans’</a></li>
+    </ol>
+  </li>
+  <li><a href="http://127.0.0.1:4000/computer-science-fundamentals-boolean-algebra/#expressions">Boolean algebra expressions</a>
+    <ol>
+      <li><a href="http://127.0.0.1:4000/computer-science-fundamentals-boolean-algebra/#q1">Question 1</a></li>
+      <li><a href="http://127.0.0.1:4000/computer-science-fundamentals-boolean-algebra/#q2">Question 2</a></li>
+      <li><a href="http://127.0.0.1:4000/computer-science-fundamentals-boolean-algebra/#q3">Question 3</a></li>
+    </ol>
+  </li>
+  <li><a href="http://127.0.0.1:4000/computer-science-fundamentals-boolean-algebra/#conclusion">Conclusion</a>
+    <ol>
+      <li><a href="http://127.0.0.1:4000/computer-science-fundamentals-boolean-algebra/#this">This post</a></li>
+      <li><a href="http://127.0.0.1:4000/computer-science-fundamentals-boolean-algebra/#next">Next post</a></li>
+    </ol>
+  </li>
+</ol>
+
+<hr>
+
+<h1 id="what-is-boolean-algebra-">What is Boolean algebra? <a name="what_is_boolean_algebra"></a></h1>
+
+<p>Boolean algebra is a part of an area of maths known as <em>discrete mathematics</em>, this area of maths deals with discrete variables opposed to continuous variables. If a variable is discrete it can only take a value from a set of values, if a variable is continuous is can take on any value. The algebra we all think of when we hear the word algebra operates using continuous variables.</p>
+
+<p>To put it simply:</p>
+
+<ul>
+  <li>Boolean algebra - X,Y,Z can only be <strong>TRUE</strong> or <strong>FALSE</strong> (this corresponds to the 1 and 0 of binary).</li>
+  <li>Regular algebra - X,Y,Z can be any  number.</li>
+</ul>
+
+<p>Also on top of this Boolean algebra has its own set of operators, it doesn’t use + - / *. It uses <strong>AND</strong>, <strong>OR</strong> and <strong>NOT</strong> operators.</p>
+
+<p><img src="./CS Fundamentals III_ Boolean Algebra &amp; Logic Gates - DevBalanced_files/boolean_algebras.jpg" alt="AND Truth Table" class="center-image"></p>
+
+<p>If you’ve noticed the capitalization of the word Boolean that is because Boolean algebra was first introduced in 1847 by a mathematician named George Boole, over the following years the idea was refined and perfected by various other mathematicians.</p>
+
+<p>Boolean algebra dictates the rules by which we can build circuits. This link was first fully realized in the 1930’s by Claude Elwood Shannon, a well known mathematician and electronic engineer. In his masters thesis he showed that electronic circuits made up of switches (think back to the previous article and how transistors that make up CPUs are tiny electronic switches) could solve all problems that Boolean algebra could solve. He showed this through the use of an abstraction called a <em>logic gate</em>.</p>
+
+<hr>
+
+<h1 id="what-is-a-logic-gate-">What is a logic gate? <a name="what_is_logic_gate"></a></h1>
+
+<p>A logic gate is simply a device which implements a Boolean operator. This is how Claude Elwood Shannon combined the theoretical area of maths known as Boolean algebra with the physical reality of electronic circuitry - a logic gate can be made up of electrical switches or it can be entirely theoretical. It is just a way of modeling the complexities of Boolean algebra in such a way that it can be translated into the real world, and therefore be used to create real circuits.</p>
+
+<p>A logic gate takes in inputs that are either <strong>TRUE</strong> or <strong>FALSE</strong>, and outputs a value either <strong>TRUE</strong> or <strong>FALSE</strong>. In a computer this would be 1 or 0, and in a circuit this would be voltage <strong>ON</strong> or <strong>OFF</strong>. Can you start to see how all these things are working together?</p>
+
+<p><img src="./CS Fundamentals III_ Boolean Algebra &amp; Logic Gates - DevBalanced_files/equivalent.jpg" alt="Equivalent Representations" class="center-image"></p>
+
+<p>We can represent anything in a computer system using binary, we can create circuits that can manipulate these representations through the use of logic gates, and the logic gates themselves are a manifestation of Boolean algebra - the algebra of discrete variables. The 1 and 0 of binary are the discrete variables!</p>
+
+<p>Interesting fact - Leibniz (the other inventor of calculus) studied the binary number system over 100 years before Boole came up with Boolean algebra, and he predicted its use in combining arithmetic and logic in the way that modern computers do. He was a genius who started university at 14 and graduated at 16.</p>
+
+<hr>
+
+<h1 id="boolean-operators--equivalent-logic-gates-">Boolean operators &amp; equivalent logic gates <a name="boolean_operators_and_gates"></a></h1>
+
+<p>So we know now that Boolean algebra is the algebra of two discrete values, typically written as <strong>TRUE</strong> and <strong>FALSE</strong>. We also know that the operators in this algebra are <strong>AND</strong>, <strong>OR</strong> and <strong>NOT</strong>. Furthermore we know that a logic gate is just a  representation of these operators, this allows for the creation of electronic circuits that follow the rules of Boolean algebra. Lets look at the basic operators and their equivalent logic gates.</p>
+
+<h2 id="basic-operators-">Basic operators <a name="basic"></a></h2>
+
+<p>We can describe the operators in several different ways. I will first write what the operator does and then show how we can write it in a statement. Then we will derive a truth table. Finally we will look at the shape of its equivalent logic gate and how you would write it in using proper mathematical notation.</p>
+
+<h3 id="and-">AND <a name="and"></a></h3>
+
+<p>The <strong>AND</strong> operator will return <strong>TRUE</strong> if and only if both of the input values are also <strong>TRUE</strong>.</p>
+
+<p>Consider the statement:</p>
+
+<blockquote>
+  <p>“If I have money <strong>AND</strong> I have handed in my coursework, then I will go for a pint.”</p>
+</blockquote>
+
+<p>We can represent this statement in Boolean algebra by assigning variables:</p>
+
+<ul>
+  <li>x - Do I have money or not?</li>
+  <li>y - Have I handed in my coursework?</li>
+  <li>z - Will I go for a pint?</li>
+</ul>
+
+<p>Then the entire statement is:</p>
+
+<blockquote>
+  <p>x <strong>AND</strong> y = z</p>
+</blockquote>
+
+<p>Now lets look at the value of the statement z given each variable, given that we know both must be <strong>TRUE</strong> to provide a <strong>TRUE</strong> result.</p>
+
+<ul>
+  <li>x = <strong>FALSE</strong> y = <strong>FALSE</strong> - I have no money, I haven’t handed in my coursework, I’m not going for a pint.</li>
+  <li>x = <strong>FALSE</strong> y = <strong>TRUE</strong> - I have no money, I have handed in my coursework, I’m not going for a pint.</li>
+  <li>x = <strong>TRUE</strong> y = <strong>FALSE</strong> - I have money, I haven’t handed in my coursework, I’m not going for a pint.</li>
+  <li>x = <strong>TRUE</strong> y = <strong>TRUE</strong> - I have money, I have handed in my coursework, I’m going for a pint. - The ideal scenario.</li>
+</ul>
+
+<p>This is the essence of a truth table. It shows you the truth value of the output, in this case z, given the truth values of the inputs. Check the truth table for the <strong>AND</strong> operator:</p>
+
+<p><img src="./CS Fundamentals III_ Boolean Algebra &amp; Logic Gates - DevBalanced_files/and_table.jpg" alt="AND Truth Table" class="center-image"></p>
+
+<p>When we represent the <strong>AND</strong> operator as a logic gate we draw it like this:</p>
+
+<p><img src="./CS Fundamentals III_ Boolean Algebra &amp; Logic Gates - DevBalanced_files/and_gate.jpg" alt="AND Gate" class="center-image"></p>
+
+<p>When we use the <strong>AND</strong> operator in an algebraic expression it can be written like this:</p>
+
+<p><img src="./CS Fundamentals III_ Boolean Algebra &amp; Logic Gates - DevBalanced_files/and_expr.jpg" alt="AND Expression" class="center-image"></p>
+
+<h3 id="or-">OR <a name="or"></a></h3>
+
+<p>The <strong>OR</strong> operator will return <strong>TRUE</strong> if any input is <strong>TRUE</strong>.</p>
+
+<p>Consider the statement:</p>
+
+<blockquote>
+  <p>“If I have money <strong>OR</strong> I have handed in my coursework, then I will go for a pint.”</p>
+</blockquote>
+
+<p>We can use the same representations of our variables as we did for the <strong>AND</strong> operator.</p>
+
+<p>Then the entire statement is:</p>
+
+<blockquote>
+  <p>x <strong>OR</strong> y = z</p>
+</blockquote>
+
+<p>Lets work through the statement in the same way, given that we know only one variable needs to be <strong>TRUE</strong> to provide a <strong>TRUE</strong> result.</p>
+
+<ul>
+  <li>x = <strong>FALSE</strong> y = <strong>FALSE</strong> - I have no money, I haven’t handed in my coursework, I’m not going for a pint.</li>
+  <li>x = <strong>FALSE</strong> y = <strong>TRUE</strong> - I have no money, I have handed in my coursework, I’m going for a pint.</li>
+  <li>x = <strong>TRUE</strong> y = <strong>FALSE</strong> - I have money, I haven’t handed in my coursework, I’m going for a pint.</li>
+  <li>x = <strong>TRUE</strong> y = <strong>TRUE</strong> - I have money, I have handed in my coursework, I’m going for a pint. - The more realistic scenario.</li>
+</ul>
+
+<p>Here is the truth table for the <strong>OR</strong> operator:</p>
+
+<p><img src="./CS Fundamentals III_ Boolean Algebra &amp; Logic Gates - DevBalanced_files/or_table.jpg" alt="OR Truth Table" class="center-image"></p>
+
+<p>When we represent the <strong>OR</strong> operator as a logic gate we draw it like this:</p>
+
+<p><img src="./CS Fundamentals III_ Boolean Algebra &amp; Logic Gates - DevBalanced_files/or_gate.jpg" alt="OR Gate" class="center-image"></p>
+
+<p>When we use the <strong>OR</strong> operator in an algebraic expression it can be written like this:</p>
+
+<p><img src="./CS Fundamentals III_ Boolean Algebra &amp; Logic Gates - DevBalanced_files/or_expr.jpg" alt="OR Expression" class="center-image"></p>
+
+<h3 id="not-">NOT <a name="not"></a></h3>
+
+<p>The <strong>NOT</strong> operator is slightly different from the previous gates. It only takes 1 input, and inverts it. This is why it is sometimes called an inverter or a negation.</p>
+
+<p>Consider the statement:</p>
+
+<blockquote>
+  <p>“I am going for a pint.”</p>
+</blockquote>
+
+<p>We can represent this single statement as a single variable x.</p>
+
+<ul>
+  <li>If x is currently <strong>TRUE</strong>, then <strong>NOT</strong> x would be <strong>FALSE</strong>.</li>
+  <li>If x is currently <strong>FALSE</strong>, then <strong>NOT</strong> x would be <strong>TRUE</strong>.</li>
+</ul>
+
+<p>Here is the truth table for the <strong>NOT</strong> operator:</p>
+
+<p><img src="./CS Fundamentals III_ Boolean Algebra &amp; Logic Gates - DevBalanced_files/not_table.jpg" alt="NOT Truth Table" class="center-image"></p>
+
+<p>When we represent the <strong>NOT</strong> operator as a logic gate we draw it like this:</p>
+
+<p><img src="./CS Fundamentals III_ Boolean Algebra &amp; Logic Gates - DevBalanced_files/not_gate.jpg" alt="NOT Gate" class="center-image"></p>
+
+<p>When we use the <strong>NOT</strong> operator in an algebraic expression it can be written like this:</p>
+
+<p><img src="./CS Fundamentals III_ Boolean Algebra &amp; Logic Gates - DevBalanced_files/not_expr.jpg" alt="NOT Expression" class="center-image"></p>
+
+<h2 id="combined-operators-">Combined operators <a name="combined"></a></h2>
+
+<p>The three previous operators are the building blocks for everything else in Boolean algebra and we can combine them to do different things. There are a few common combinations of these three which are so common they get their own names.</p>
+
+<h3 id="xor-">XOR <a name="xor"></a></h3>
+
+<p>The <strong>XOR</strong> operator, also called <strong>exclusive-OR</strong>, will return <strong>TRUE</strong> if and only if exactly 1 input is <strong>TRUE</strong>.</p>
+
+<p>Here is the truth table for the <strong>XOR</strong> operator:</p>
+
+<p><img src="./CS Fundamentals III_ Boolean Algebra &amp; Logic Gates - DevBalanced_files/xor_table.jpg" alt="XOR Truth Table" class="center-image"></p>
+
+<p>When we represent the <strong>XOR</strong> operator as a logic gate we draw it like this:</p>
+
+<p><img src="./CS Fundamentals III_ Boolean Algebra &amp; Logic Gates - DevBalanced_files/xor_gate.jpg" alt="XOR Gate" class="center-image"></p>
+
+<p>When we use the <strong>XOR</strong> operator in an algebraic expression it can be written like this:</p>
+
+<p><img src="./CS Fundamentals III_ Boolean Algebra &amp; Logic Gates - DevBalanced_files/xor_expr.jpg" alt="XOR Expression" class="center-image"></p>
+
+<h3 id="nand-">NAND <a name="nand"></a></h3>
+
+<p>The <strong>NAND</strong> operator, also called <strong>NOT-AND</strong>, is the opposite of the <strong>AND</strong> gate.</p>
+
+<p>Here is the truth table for the <strong>NAND</strong> operator:</p>
+
+<p><img src="./CS Fundamentals III_ Boolean Algebra &amp; Logic Gates - DevBalanced_files/nand_table.jpg" alt="NAND Truth Table" class="center-image"></p>
+
+<p>When we represent the <strong>NAND</strong> operator as a logic gate we draw it like this:</p>
+
+<p><img src="./CS Fundamentals III_ Boolean Algebra &amp; Logic Gates - DevBalanced_files/nand_gate.jpg" alt="NAND Gate" class="center-image"></p>
+
+<p>When we use the <strong>NAND</strong> operator in an algebraic expression it can be written like this:</p>
+
+<p><img src="./CS Fundamentals III_ Boolean Algebra &amp; Logic Gates - DevBalanced_files/nand_expr.jpg" alt="NAND Expression" class="center-image"></p>
+
+<h3 id="nor-">NOR <a name="nor"></a></h3>
+
+<p>The <strong>NOR</strong> operator, also called <strong>NOT-OR</strong>, is the opposite of the <strong>OR</strong> gate.</p>
+
+<p>Here is the truth table for the <strong>NOR</strong> operator:</p>
+
+<p><img src="./CS Fundamentals III_ Boolean Algebra &amp; Logic Gates - DevBalanced_files/nor_table.jpg" alt="NOR Truth Table" class="center-image"></p>
+
+<p>When we represent the <strong>NOR</strong> operator as a logic gate we draw it like this:</p>
+
+<p><img src="./CS Fundamentals III_ Boolean Algebra &amp; Logic Gates - DevBalanced_files/nor_gate.jpg" alt="NOR Gate" class="center-image"></p>
+
+<p>When we use the <strong>NOR</strong> operator in an algebraic expression it can be written like this:</p>
+
+<p><img src="./CS Fundamentals III_ Boolean Algebra &amp; Logic Gates - DevBalanced_files/nor_expr.jpg" alt="NOR Expression" class="center-image"></p>
+
+<h2 id="cheat-sheet-">Cheat-sheet <a name="cheatsheet"></a></h2>
+
+<p>As a reference here is all the information from the this section in one image:</p>
+
+<p><img src="./CS Fundamentals III_ Boolean Algebra &amp; Logic Gates - DevBalanced_files/gates-cheatsheet.jpg" alt="Gates Cheat-sheet" class="center-image"></p>
+
+<h2 id="simple-example-">Simple example <a name="simple-example"></a></h2>
+
+<p>To test our understanding of what we have covered so far lets look at a simple combination of logic gates and calculate the output value for a given set of input values.</p>
+
+<p><img src="./CS Fundamentals III_ Boolean Algebra &amp; Logic Gates - DevBalanced_files/simple_ex_1.jpg" alt="Simple example 1" class="center-image"></p>
+
+<p>Using the input values of v = <strong>TRUE</strong> , w = <strong>FALSE</strong>, x = <strong>FALSE</strong>, y = <strong>TRUE</strong>.</p>
+
+<ul>
+  <li>v . w = T . F = F</li>
+  <li>x + y = F + T = T</li>
+  <li>(v . w) + (x + y) = F + T = T</li>
+  <li>z = T</li>
+</ul>
+
+<hr>
+
+<h1 id="boolean-algebra-laws-">Boolean algebra laws <a name="laws"></a></h1>
+
+<p>Hopefully we have now developed a rudimentary understanding of what Boolean algebra is, and how it relates to logic gates and circuits. Boolean algebra has several laws which helps us to manipulate algebraic expressions to more easily calculate the values of complex expressions. These might seem confusing at first, to really gain an understanding try constructing a truth table of the equivalent expressions.</p>
+
+<h2 id="commutativity-">Commutativity <a name="commutativity"></a></h2>
+
+<p>The law of commutativity states that the order of the terms for an expression can be changed and the end will result will be no different.</p>
+
+<p><img src="./CS Fundamentals III_ Boolean Algebra &amp; Logic Gates - DevBalanced_files/commutativity.jpg" alt="Commutativity" class="center-image"></p>
+
+<h2 id="identity-">Identity <a name="identity"></a></h2>
+
+<p>The law of identity shows how expressions behave when one of the terms is fixed.</p>
+
+<p><img src="./CS Fundamentals III_ Boolean Algebra &amp; Logic Gates - DevBalanced_files/identity.jpg" alt="Identity" class="center-image"></p>
+
+<h2 id="complement-">Complement <a name="complement"></a></h2>
+
+<p>The law of complement shows the relationship between a variable and its negation. For example a variable OR its negation will always be true and a variable AND its negation will always be false.</p>
+
+<p><img src="./CS Fundamentals III_ Boolean Algebra &amp; Logic Gates - DevBalanced_files/complement.jpg" alt="Complement" class="center-image"></p>
+
+<h2 id="idempotent-">Idempotent <a name="idempotent"></a></h2>
+
+<p>The law of idempotent shows how an expression behaves when a variable is repeated. It can be simplified to itself.</p>
+
+<p><img src="./CS Fundamentals III_ Boolean Algebra &amp; Logic Gates - DevBalanced_files/idempotent.jpg" alt="Idempotent" class="center-image"></p>
+
+<h2 id="double-negation-">Double negation <a name="double_negation"></a></h2>
+
+<p>The law of double negation shows that when a variable is negated twice then the negation is negated, effectively meaning the variable is just equal to itself.</p>
+
+<p><img src="./CS Fundamentals III_ Boolean Algebra &amp; Logic Gates - DevBalanced_files/double_negation.jpg" alt="Double Negation" class="center-image"></p>
+
+<h2 id="associativity-">Associativity <a name="associativity"></a></h2>
+
+<p>The law of associativity shows the different ways that like terms can be grouped together and the end result remain the same.</p>
+
+<p><img src="./CS Fundamentals III_ Boolean Algebra &amp; Logic Gates - DevBalanced_files/associativity.jpg" alt="Associativity" class="center-image"></p>
+
+<h2 id="distributivity-">Distributivity <a name="distributivity"></a></h2>
+
+<p>The law of distributivity is similar to bracket expansion in traditional multiplication. See how the outer expression is effectively applied to the variables in the brackets, the operator in the brackets becomes the operator between the new sets of two brackets.</p>
+
+<p><img src="./CS Fundamentals III_ Boolean Algebra &amp; Logic Gates - DevBalanced_files/distributivity.jpg" alt="Distributivity" class="center-image"></p>
+
+<h2 id="de-morgans">de Morgans’<a name="de_morgans"></a></h2>
+
+<p>de Morgans’ law is a special law that shows how AND and OR can be made to be equivalent through the use of the negation operator. This idea will be covered in more technical posts about propositional logic, in propositional logic AND and OR are called conjunction and injunction respectively. Essentially we can change an AND to an OR or vice-versa through the manipulation of negation operations.</p>
+
+<p><img src="./CS Fundamentals III_ Boolean Algebra &amp; Logic Gates - DevBalanced_files/demorgans.jpg" alt="de Morgans&#39;" class="center-image"></p>
+
+<hr>
+
+<h1 id="questions-">Questions <a name="questions"></a></h1>
+
+<p>Now we know as much about Boolean algebra as we need to look at more complex examples. We can take a Boolean expression and create a logic gate diagram, take a truth table and fill it out, or take a logic gate diagram and create a truth table. All these things are interchangeable ways of understanding the abstract concept of Boolean algebra.</p>
+
+<h2 id="question-1-">Question 1 <a name="q1"></a></h2>
+
+<p>Given the Boolean expression below, construct a logic gate diagram and determine the output when inputs equal to x = FALSE, y = TRUE by constructing a truth table.</p>
+
+<p><img src="./CS Fundamentals III_ Boolean Algebra &amp; Logic Gates - DevBalanced_files/q1.jpg" alt="Question 1" class="center-image"></p>
+
+<details>
+<summary>
+Click for answer.
+</summary>
+<p>
+
+<img src="./CS Fundamentals III_ Boolean Algebra &amp; Logic Gates - DevBalanced_files/a1.jpg" alt="Answer 1&#39;">
+ Does this truth table look familiar? It is the XOR operation. This is one way that XOR can be constructed from the basic operators!
+</p>
+</details>
+
+<h2 id="question-2-">Question 2 <a name="q2"></a></h2>
+
+<p>Given the logic gate diagram, work out the corresponding Boolean expression and simplify.</p>
+
+<p><img src="./CS Fundamentals III_ Boolean Algebra &amp; Logic Gates - DevBalanced_files/q2.jpg" alt="Question 2" class="center-image"></p>
+
+<details>
+<summary>
+Click for answer.
+</summary>
+<p>
+
+<img src="./CS Fundamentals III_ Boolean Algebra &amp; Logic Gates - DevBalanced_files/a2.jpg" alt="Answer 2&#39;">
+
+</p>
+</details>
+
+<h2 id="question-3-">Question 3 <a name="q3"></a></h2>
+
+<p>Complete the given truth table, then draw the logic gate diagram.</p>
+
+<p><img src="./CS Fundamentals III_ Boolean Algebra &amp; Logic Gates - DevBalanced_files/q3.jpg" alt="Question 3" class="center-image"></p>
+
+<details>
+<summary>
+Click for answer.
+</summary>
+<p>
+
+<img src="./CS Fundamentals III_ Boolean Algebra &amp; Logic Gates - DevBalanced_files/a3.jpg" alt="Answer 3&#39;">
+
+</p>
+</details>
+
+<hr>
+
+<h1 id="conclusion-">Conclusion <a name="conclusion"></a></h1>
+
+<h2 id="this-post-">This post <a name="this"></a></h2>
+
+<p>Let’s summarize what we have covered in this post as it is much more abstract and technical then the previous posts in this series.</p>
+
+<ul>
+  <li>We learned that Boolean algebra is a type of algebra that uses discrete variables (TRUE, FALSE) and its own operators (AND, OR, NOT).</li>
+  <li>We learned a logic gate is an abstraction that represents a Boolean operation, it can be used abstractly in diagrams or be physically implemented using switches (such as transistors)</li>
+  <li>We learned how each basic operator works, its truth table, its logic gate symbol and its algebraic notation</li>
+  <li>We learned about combined operators that can be made from AND, OR, NOT operators</li>
+  <li>We learned about several “Laws of Boolean algebra” which allow us to manipulate and simplify Boolean algebra, this can help us reduce the size of circuits to the minimum required number of logic gates</li>
+  <li>We practiced three difficult questions</li>
+</ul>
+
+<p>A lot to take in for one post, but understanding Boolean algebra is fundamental to understanding computer science!</p>
+
+<h2 id="next-post-">Next post <a name="next"></a></h2>
+
+<p>The next post will be a change of track from the binary and Boolean algebra that we have been studying. We will look at a more complex version of Computer Architecture than the stored program computer mentioned in the first post.</p>
+
+<p>Thanks for checking out the blog,</p>
+
+<p>Max Sargent</p>
+
+      <div class="page-footer">
+        <div class="page-tag">
+          
+        </div>
+      </div>
+      <section class="comment-area">
+  <div class="comment-wrapper">
+    
+    <div id="disqus_thread" class="article-comments"><iframe id="dsq-app5660" name="dsq-app5660" allowtransparency="true" frameborder="0" scrolling="no" tabindex="0" title="Disqus" width="100%" src="./CS Fundamentals III_ Boolean Algebra &amp; Logic Gates - DevBalanced_files/saved_resource.html" style="width: 1px !important; min-width: 100% !important; border: none !important; overflow: hidden !important; height: 307px !important;" horizontalscrolling="no" verticalscrolling="no"></iframe></div>
+    <script>
+      (function() {
+          var d = document, s = d.createElement('script');
+          s.src = '//devbalanced.disqus.com/embed.js';
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+      })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    
+  </div>
+</section> <!-- End Comment Area -->
+
+    </div> <!-- End Wrap Content -->
+  </div> <!-- End Page Content -->
+</article> <!-- End Article Page -->
+
+</div>
+
+  </div>
+  
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-114351851-2', 'auto');
+  ga('send', 'pageview');
+</script> <!-- End Analytics -->
+
+
+
+<iframe style="display: none;" src="./CS Fundamentals III_ Boolean Algebra &amp; Logic Gates - DevBalanced_files/saved_resource(1).html"></iframe></body></html>
