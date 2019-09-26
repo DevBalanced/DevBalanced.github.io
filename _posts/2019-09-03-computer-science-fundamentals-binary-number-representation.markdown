@@ -13,20 +13,20 @@ This post is the second in the CS Fundamentals series, todays topic is a concept
 ---
 
 # Contents
-1. [What is binary?](#what_is_binary)
-	1. [Encoding](#encoding)
-	2. [Binary units](#binary_units)
-2. [How binary works](#how_binary_works)
-	1. [Base-2 and base-10](#base-2_base-10)
-	2. [Place values](#place_values)
-	3. [Comparison](#comparison)
-	4. [Why do we use binary?](#why_binary)
-3. [Converting denary to binary](#conversion)
-	1. [Divide by 2 method](#div_2)
-	2. [Largest place value method](#largest_place)
-4. [Conclusion](#conclusion)
-	1. [This post](#this_post)
-	2. [Next post](#next_post)
+- [What is binary?](#what_is_binary)
+	- [Encoding](#encoding)
+	- [Binary units](#binary_units)
+- [How binary works](#how_binary_works)
+	- [Base-2 and base-10](#base-2_base-10)
+	- [Place values](#place_values)
+	- [Comparison](#comparison)
+	- [Why do we use binary?](#why_binary)
+- [Converting denary to binary](#conversion)
+	- [Divide by 2 method](#div_2)
+	- [Largest place value method](#largest_place)
+- [Conclusion](#conclusion)
+	- [This post](#this_post)
+	- [Next post](#next_post)
 
 ---
 
