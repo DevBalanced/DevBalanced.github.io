@@ -113,6 +113,6 @@ Thanks for checking out the blog,
 
 Max Sargent
 
-[spark-link]:[https://sparkar.facebook.com/ar-studio/learn/documentation/guides]
-[face-reference-assets]:[https://developers.facebook.com/docs/ar-studio/before-you-start/basics/using-the-face-reference-assets/]
+[spark-link]:https://sparkar.facebook.com/ar-studio/learn/documentation/guides
+[face-reference-assets]:https://developers.facebook.com/docs/ar-studio/before-you-start/basics/using-the-face-reference-assets/
 [joker-tex]:/assets/img/spark-ar/introduction/jokerMakeup_tex2.png
